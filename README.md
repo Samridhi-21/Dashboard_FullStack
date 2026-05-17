@@ -284,29 +284,7 @@ Seed data after containers are up:
 docker exec -it smart-leads-backend sh -c "npm run seed"
 ```
 
-## Deployment
 
-### Backend (e.g. Railway, Render, Fly.io)
-
-1. Set environment variables (`MONGODB_URI`, `JWT_SECRET`, `CORS_ORIGIN`, etc.)
-2. Use MongoDB Atlas for production database
-3. Build: `npm run build`
-4. Start: `npm start`
-
-### Frontend (e.g. Vercel, Netlify)
-
-1. Set `VITE_API_URL` to your deployed API URL
-2. Build: `npm run build`
-3. Deploy the `dist` folder
-
-### Full stack with Docker
-
-Deploy `docker-compose.yml` to any VPS (DigitalOcean, AWS EC2, etc.):
-
-1. Update `JWT_SECRET` in production
-2. Point domain to frontend (port 80)
-3. Configure reverse proxy if needed
-4. Use MongoDB Atlas instead of container MongoDB for production
 
 ## Role Permissions
 
